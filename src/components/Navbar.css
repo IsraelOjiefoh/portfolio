@@ -1,53 +1,53 @@
 #custom-navbar {
-  background-image: linear-gradient(to left, rgb(22 15 36), rgb(15 10 30));
-}
-
-.navigation-text {
-  font-family: "OpenSans-Light";
-  font-size: 15pt;
-  margin-inline: 5px;
-  color: white;
-}
-
-.navigation-text:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
-.active {
-  font-weight: bold;
-}
-
-.not-clicked {
-  color: wheat;
-  opacity: 0.7;
-}
-
-.not-clicked:hover {
-  cursor: pointer;
-}
-
-.nav-link {
-  color: white;
-}
-
-.about-section {
-  text-align: center;
-}
-
-.icons {
-  font-size: 24px;
-  margin-right: 2px;
-}
-.nav-lin{
-  display: flex;
-  justify-content: space-between;
-  margin-left: 300px;
-  margin-right: 40px;
-}
-@media (max-width:768px){
-.nav-lin{
-  display: block;
-  margin: 10px;
-}
-}
+    background-image: linear-gradient(to left, rgb(22 15 36), rgb(15 10 30));
+  }
+  
+  .navigation-text {
+    font-family: "OpenSans-Light";
+    font-size: 15pt;
+    margin-inline: 5px;
+    color: white;
+  }
+  
+  .navigation-text:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .active {
+    font-weight: bold;
+  }
+  
+  .not-clicked {
+    color: wheat;
+    opacity: 0.7;
+  }
+  
+  .not-clicked:hover {
+    cursor: pointer;
+  }
+  
+  .nav-link {
+    color: white;
+  }
+  
+  .about-section {
+    text-align: center;
+  }
+  
+  .icons {
+    font-size: 24px;
+    margin-right: 2px;
+  }
+  .nav-lin{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 300px;
+    margin-right: 40px;
+  }
+  @media (max-width:768px){
+  .nav-lin{
+    display: block;
+    margin: 10px;
+  }
+  }

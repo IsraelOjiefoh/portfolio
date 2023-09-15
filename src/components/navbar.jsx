@@ -5,7 +5,7 @@ import {
   FaFolderOpen,
   FaCertificate,
 } from "react-icons/fa";
-import "./NavBar.css";
+import "./navBar.css";
 import { useState } from "react";
 
 const MyNavbar = () => {
