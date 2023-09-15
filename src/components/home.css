@@ -1,43 +1,42 @@
-.heading{
+.heading {
     color: white;
 }
 
-.heading-name{
+.heading-name {
     color: white;
 }
 
-strong{
+strong {
     color: rgb(216, 19, 216);
 }
 
-.type{
+.type {
     color: rgb(216, 19, 216);
-font-size: xx-large;
+    font-size: xx-large;
 }
 
-.purple{
+.purple {
     color: rgb(216, 19, 216);
 
 }
-.home2{
+
+.home2 {
     margin-top: 50px;
     color: white;
 }
 
-.home-about-social-links{
-   display: flex; 
-   justify-content: center;
+.home-about-social-links {
+    display: flex;
+    justify-content: center;
 }
 
-.social-icons{
-    background-color: white;
+.social-icons {
     margin-top: 20px;
     margin-right: 55px;
     font-size: xx-large;
-    border-radius: 25px;
-    height: 50px;
-    width: 45px;
+
 }
-.findMe{
+
+.findMe {
     margin-top: 50px;
 }
