@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from '../Assets/avatar.svg'
 import Tilt from "react-parallax-tilt";
-import "./home.css";
+import "./homes.css";
 import {
   AiFillGithub,
   AiOutlineTwitter,

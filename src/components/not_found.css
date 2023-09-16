@@ -1,0 +1,13 @@
+/* NotFound.css */
+.not-found {
+  height: 100%;
+  width: 100%;
+  background-color: #f8f8f8; /* Set the background color you want */
+  color: #333; /* Set the text color you want */
+  padding: 20px;
+  text-align: center;
+
+}
+.container{
+    color: white;
+}
