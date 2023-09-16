@@ -13,7 +13,7 @@ function MyNavbar() {
               <Nav.Link>
                 <Link
                   to="/"
-                  className="mx-5 fs-5 text-white text-decoration-none"
+                  className="mx-4 fs-5 text-white text-decoration-none"
                 >
                   {" "}
                   <FaHome /> Home
@@ -21,19 +21,19 @@ function MyNavbar() {
 
                 <Link
                   to="/about"
-                  className="mx-5  fs-5 text-white text-decoration-none"
+                  className="mx-4  fs-5 text-white text-decoration-none"
                 >
                   <FaInfoCircle /> About
                 </Link>
                 <Link
                   to="/projects"
-                  className="mx-5 fs-5 text-white text-decoration-none"
+                  className="mx-4 fs-5 text-white text-decoration-none"
                 >
                   <FaFolderOpen /> Projects
                 </Link>
                 <Link
                   to="/resume"
-                  className="mx-5 fs-5 text-white text-decoration-none"
+                  className="mx-6 fs-5 text-white text-decoration-none"
                 >
                   <FaFilePdf /> Resume
                 </Link>

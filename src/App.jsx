@@ -1,5 +1,5 @@
 import Home from "./components/home";
-import About from "./components/about";
+import About from "./components/About/About";
 import Projects from "./components/projects";
 import Resume from "./components/resume";
 import NotFound from "./components/not_found";
