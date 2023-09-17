@@ -1,8 +1,8 @@
-import Home from "./components/home";
+import Home from "./components/Home/home";
 import About from "./components/About/About";
-import Projects from "./components/projects";
-import Services from "./components/services";
-import NotFound from "./components/not_found";
+import Projects from "./components/projects/projects";
+import Services from "./components/services/services";
+import NotFound from "./components/not_found/not_found";
 import Layout from "./components/About/layout/layout";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 

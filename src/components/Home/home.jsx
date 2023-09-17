@@ -1,8 +1,8 @@
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../Assets/home-main.svg";
+import homeLogo from "./home-main.svg";
 import "./homes.css";
 import Home2 from "./home2";
-import Type from "../Type";
+import Type from "../../Type";
 function Home() {
   return (
     <section>
