@@ -7,13 +7,13 @@
     border: 2px solid purple;
     border-radius: 9px;
     padding: 20px;
-    margin: 50px;
+    margin: 30px;
     
   }
 
-  .card-header {
+  .card-head {
     color:rgb(217, 8, 217);
-    padding: 10px 0;
+    padding: 20px ;
     font-size: 24px;
   }
 
