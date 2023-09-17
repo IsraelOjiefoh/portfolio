@@ -1,5 +1,5 @@
 import portfolioImg from "../Assets/portfolio.jpg";
-import './projects.css'
+import "./projects.css";
 const Projects = () => {
   const project = [
     {
@@ -14,12 +14,13 @@ const Projects = () => {
       liveDemo: "https://israelojiefoh.netlify.app/",
       gitHubRepo: "http://www.github.com/IsraelOjiefoh/portfolio",
     },
+    
   ];
   return (
-    <div className="projects" >
+    <div className="projects">
       {project.map((item) => (
         <div className="item" key={item.id}>
-          <img  src={item.ImgUrl} alt="image" className="card-img-top" />
+          <img src={item.ImgUrl} alt="image" className="card-img-top" />
           <div className="card-title p-3 fs-4">{item.title}</div>
           <a href={item.gitHubRepo} target="_blank ">
             <button className="btn btn-light mb-4 me-4">GitHub</button>
