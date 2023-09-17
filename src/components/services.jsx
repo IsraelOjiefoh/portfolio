@@ -33,7 +33,7 @@ const Services = () => {
         <div className="my-5">
           <div className="frontend">
             <div className="card-head">Tutorials</div>
-            <div className="card-body">
+            <div className="card-body ">
               <ul>
                 <li>Teaching The Basics Of Web Development</li>
                 <li>Building User Interfaces From Scratch</li>
