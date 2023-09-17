@@ -1,0 +1,9 @@
+.navigation-text
+{
+    cursor:pointer
+    color white
+}
+.not-clicked{
+    color: gray;
+    cursor: pointer;
+}

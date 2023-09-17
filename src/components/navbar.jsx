@@ -1,49 +1,82 @@
-import { Navbar, Nav, Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
-import { FaHome, FaInfoCircle, FaFolderOpen, FaFilePdf } from "react-icons/fa";
-function MyNavbar() {
+import { Container, Row, Col } from "react-bootstrap";
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import "./navbar.css";
+const Navbar = () => {
+  const [isClicked, setIsClicked] = useState("Home");
+
   return (
-    <div className="nav-lin">
-      <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
-        <Container>
-          <Navbar.Brand>ISRAEL OJIEFOH</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="ml-auto">
-              <Nav.Link>
-                <Link
-                  to="/"
-                  className="mx-3 fs-5 text-white text-decoration-none"
-                >
-                  {" "}
-                  <FaHome /> Home
-                </Link>
-
-                <Link
-                  to="/about"
-                  className="mx-3  fs-5 text-white text-decoration-none"
-                >
-                  <FaInfoCircle /> About
-                </Link>
-                <Link
-                  to="/projects"
-                  className="mx-3 fs-5 text-white text-decoration-none"
-                >
-                  <FaFolderOpen /> Projects
-                </Link>
-                <Link
-                  to="/resume"
-                  className="mx-3 fs-5 text-white text-decoration-none"
-                >
-                  <FaFilePdf /> Resume
-                </Link>
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </div>
+    <Container className="py-4 ">
+      <Row className="navigation-row">
+        <NavLink className="text-decoration-none fs-5 d-flex justify-content-around ">
+          <Link className="text-decoration-none text-light" to="/">
+            <Col
+              xs
+              lg="3"
+              className={
+                isClicked === "Home"
+                  ? "navigation-text"
+                  : "navigation-text not-clicked"
+              }
+              onClick={() => {
+                setIsClicked("Home");
+              }}
+            >
+              Home
+            </Col>
+          </Link>
+          <Link to="/about" className="text-decoration-none text-light">
+            <Col
+              xs
+              lg="3"
+              className={
+                isClicked === "About"
+                  ? "navigation-text"
+                  : "navigation-text not-clicked"
+              }
+              onClick={() => {
+                setIsClicked("About");
+              }}
+            >
+              About
+            </Col>
+          </Link>
+          <Link to="/projects" className="text-decoration-none text-light">
+            <Col
+              xs
+              lg="3"
+              className={
+                isClicked === "Projects"
+                  ? "navigation-text"
+                  : "navigation-text not-clicked"
+              }
+              onClick={() => {
+                setIsClicked("Projects");
+              }}
+            >
+              Projects
+            </Col>
+          </Link>
+          <Link to="/services" className="text-decoration-none text-light">
+            <Col
+              xs
+              lg="3"
+              className={
+                isClicked === "Services"
+                  ? "navigation-text"
+                  : "navigation-text not-clicked"
+              }
+              onClick={() => {
+                setIsClicked("Services");
+              }}
+            >
+              Services
+            </Col>
+          </Link>
+        </NavLink>
+      </Row>
+    </Container>
   );
-}
+};
 
-export default MyNavbar;
+export default Navbar;

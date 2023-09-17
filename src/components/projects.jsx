@@ -1,5 +1,5 @@
 const Projects = () => {
-  return <h1>This is the Projects Page</h1>;
+  return <h1 style={{textAlign: "center", marginTop:50}}>Coming Soon...</h1>;
 };
 
 export default Projects;
