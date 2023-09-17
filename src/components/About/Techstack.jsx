@@ -1,4 +1,5 @@
 import { Card, Col, Row } from "react-bootstrap";
+import CardHeader from "react-bootstrap/esm/CardHeader";
 import {
   DiJavascript1,
   DiReact,
@@ -12,6 +13,7 @@ function Techstack() {
   return (
     <Card className="tech-card mb-5">
       <Card.Body>
+        <CardHeader>My Skills</CardHeader>
         <Row
           className="tech-icons-row"
           style={{ justifyContent: "center", paddingBottom: "50px" }}

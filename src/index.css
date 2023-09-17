@@ -41,11 +41,9 @@
 }
 
 /* Add this CSS to your stylesheet */
-.tech-card {
+ .tech-card {
   border: none;
-  /* Remove the card border */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* Add a subtle box shadow */
   font-size: 50px;
 }
 
@@ -53,10 +51,8 @@
   text-align: center;
   padding: 10px;
   transition: transform 0.2s;
-  /* Add a smooth transition effect */
 }
 
 .tech-icons-row .tech-icons:hover {
   transform: scale(1.1);
-  /* Scale the icon on hover */
-}
+} 
