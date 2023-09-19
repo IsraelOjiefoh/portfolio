@@ -1,5 +1,4 @@
-import Contact from "../contact/contact";
-
+import Contacts from "../contact/contact";
 import "./services.css";
 const Services = () => {
   return (
@@ -45,7 +44,7 @@ const Services = () => {
         </div>
       </div>
 
-      <Contact />
+      <Contacts />
     </>
   );
 };
