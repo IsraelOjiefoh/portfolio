@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Row, Container, NavLink } from "react-bootstrap";
+// import { Row, Container, NavLink } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 
@@ -8,8 +8,46 @@ function YourNavbar() {
 
   return (
     <div>
-      <Container className="py-4">
-        <Row className="navigation-row">
+      {/* <Container > */}
+      <nav className="fixed-top ">
+        <input type="checkbox" id="check"></input>
+        <label htmlFor="check" className="checkbtn">
+          <i className="fas fa-bars"></i>
+        </label>
+        <label className="logo">Israel Ojiefoh</label>
+
+        <ul>
+          <li className="">
+            <Link
+              to="/"
+              onClick={() => setIsClicked("Home")}
+              className={isClicked ? "nav-link-active" : "not-clicked"}
+            >
+              Home
+            </Link>
+          </li>
+          <li className="">
+            <Link
+              to="/about"
+              onClick={() => setIsClicked("About")}
+              className={isClicked ? "nav-link-active" : "not-clicked"}
+            >
+              about
+            </Link>
+          </li>
+          <li>
+            <a href="/" className="nav-link-active">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="/" className="nav-link-active">
+              Services{" "}
+            </a>
+          </li>
+        </ul>
+      </nav>
+      {/* <Row className="navigation-row">
           <NavLink className="text-decoration-none fs-5 d-flex justify-content-around">
             <Link
               className={
@@ -56,8 +94,8 @@ function YourNavbar() {
               Services
             </Link>
           </NavLink>
-        </Row>
-      </Container>
+        </Row> */}
+      {/* </Container> */}
     </div>
   );
 }

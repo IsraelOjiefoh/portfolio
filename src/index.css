@@ -11,36 +11,6 @@
 
 }
 
-.wave {
-  display: inline-block;
-  animation-name: wave-animation;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(20deg);
-  }
-
-  50% {
-    transform: rotate(0deg);
-  }
-
-  75% {
-    transform: rotate(-20deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
-/* Add this CSS to your stylesheet */
 .tech-card {
   border: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -79,9 +49,3 @@
   transition: opacity 300ms, transform 300ms;
 }
 
-/* Additional styles for the "about-section" container and its children */
-.about-section {
-  /* Add your styles here */
-}
-
-/* Additional styles for other elements like "about-img" and "purple" */
