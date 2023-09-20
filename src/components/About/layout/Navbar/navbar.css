@@ -1,14 +1,14 @@
-.navigation-text {
-    cursor: pointer color white
-}
-
 .not-clicked {
     color: gray;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .nav-link-active {
     position: relative;
+    cursor: pointer color white;
+    text-decoration: none;
+    color: white;
 }
 
 .nav-link-active::before {

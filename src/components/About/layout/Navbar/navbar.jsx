@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Row, Container, NavLink } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./navbar.css"; // Replace with your CSS file
+import "./navbar.css";
 
 function YourNavbar() {
-  const [isClicked, setIsClicked] = useState("");
+  const [isClicked, setIsClicked] = useState("Home");
 
   return (
     <div>
@@ -12,9 +12,9 @@ function YourNavbar() {
         <Row className="navigation-row">
           <NavLink className="text-decoration-none fs-5 d-flex justify-content-around">
             <Link
-              className={`text-decoration-none text-light ${
-                isClicked === "Home" ? "nav-link-active" : ""
-              }`}
+              className={
+                isClicked === "Home" ? "nav-link-active" : "not-clicked"
+              }
               to="/"
               onClick={() => {
                 setIsClicked("Home");
@@ -24,9 +24,9 @@ function YourNavbar() {
             </Link>
             <Link
               to="/about"
-              className={`text-decoration-none text-light ${
-                isClicked === "About" ? "nav-link-active" : ""
-              }`}
+              className={
+                isClicked === "About" ? "nav-link-active" : "not-clicked"
+              }
               onClick={() => {
                 setIsClicked("About");
               }}
@@ -35,9 +35,9 @@ function YourNavbar() {
             </Link>
             <Link
               to="/projects"
-              className={`text-decoration-none text-light ${
-                isClicked === "Projects" ? "nav-link-active" : ""
-              }`}
+              className={
+                isClicked === "Projects" ? "nav-link-active" : "not-clicked"
+              }
               onClick={() => {
                 setIsClicked("Projects");
               }}
@@ -46,9 +46,9 @@ function YourNavbar() {
             </Link>
             <Link
               to="/services"
-              className={`text-decoration-none text-light ${
-                isClicked === "Services" ? "nav-link-active" : ""
-              }`}
+              className={
+                isClicked === "Services" ? "nav-link-active" : "not-clicked"
+              }
               onClick={() => {
                 setIsClicked("Services");
               }}
