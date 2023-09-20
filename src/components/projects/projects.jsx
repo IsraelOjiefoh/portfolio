@@ -7,7 +7,7 @@ const Projects = () => {
     triggerOnce: false,
     threshold: 0.2,
   });
-  const project = [
+  const projects = [
     {
       id: 1,
       imgUrl: portfolioImg,
@@ -27,14 +27,14 @@ const Projects = () => {
   return (
     <div className={`your-component ${inView ? "zoom-in" : ""}`} ref={ref}>
       <div className="projects ">
-        {project.map((item) => (
-          <div className="item" key={item.id}>
-            <img src={item.imgUrl} alt="image" className="w-75" />
-            <div className=" pb-3 fs-4">{item.title}</div>
+        {projects.map((project) => (
+          <div className="project" key={project.id}>
+            <img src={project.imgUrl} alt="image" className="w-75" />
+            <div className=" pb-3 fs-4">{project.title}</div>
 
-            <a href={item.gitHubRepo} target="_blank ">
+            <a href={project.gitHubRepo} target="_blank ">
               <button className="btn btn-light mb-4 me-4">GitHub</button>
-              <a href={item.liveDemo} target="_blank ">
+              <a href={project.liveDemo} target="_blank ">
                 <button className="btn btn-success mb-4">Live Demo</button>
               </a>
             </a>
