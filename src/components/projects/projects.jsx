@@ -30,7 +30,7 @@ const Projects = () => {
       <div className="projects ">
         {ReversedProjects.map((project) => (
           <div className="project" key={project.id}>
-            <img src={project.imgUrl} alt="image" className="w-75" />
+            <img src={project.imgUrl} alt="image" className="w-75 pt-5" />
             <div className=" pb-3 fs-4">{project.title}</div>
 
             <a href={project.gitHubRepo} target="_blank ">
