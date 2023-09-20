@@ -24,10 +24,11 @@ const Projects = () => {
       gitHubRepo: "https://github.com/IsraelOjiefoh/memes",
     },
   ];
+  const ReversedProjects = projects.reverse()
   return (
     <div className={`your-component ${inView ? "zoom-in" : ""}`} ref={ref}>
       <div className="projects ">
-        {projects.map((project) => (
+        {ReversedProjects.map((project) => (
           <div className="project" key={project.id}>
             <img src={project.imgUrl} alt="image" className="w-75" />
             <div className=" pb-3 fs-4">{project.title}</div>
