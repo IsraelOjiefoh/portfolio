@@ -1,82 +1,65 @@
-import { Container, Row, Col } from "react-bootstrap";
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
-import "./navbar.css";
-const Navbar = () => {
-  const [isClicked, setIsClicked] = useState("Home");
+import { Row, Container, NavLink } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import "./navbar.css"; // Replace with your CSS file
+
+function YourNavbar() {
+  const [isClicked, setIsClicked] = useState("");
 
   return (
-    <Container className="py-4 ">
-      <Row className="navigation-row">
-        <NavLink className="text-decoration-none fs-5 d-flex justify-content-around ">
-          <Link className="text-decoration-none text-light" to="/">
-            <Col
-              xs
-              lg="3"
-              className={
-                isClicked === "Home"
-                  ? "navigation-text"
-                  : "navigation-text not-clicked"
-              }
+    <div>
+      <Container className="py-4">
+        <Row className="navigation-row">
+          <NavLink className="text-decoration-none fs-5 d-flex justify-content-around">
+            <Link
+              className={`text-decoration-none text-light ${
+                isClicked === "Home" ? "nav-link-active" : ""
+              }`}
+              to="/"
               onClick={() => {
                 setIsClicked("Home");
               }}
             >
               Home
-            </Col>
-          </Link>
-          <Link to="/about" className="text-decoration-none text-light">
-            <Col
-              xs
-              lg="3"
-              className={
-                isClicked === "About"
-                  ? "navigation-text"
-                  : "navigation-text not-clicked"
-              }
+            </Link>
+            <Link
+              to="/about"
+              className={`text-decoration-none text-light ${
+                isClicked === "About" ? "nav-link-active" : ""
+              }`}
               onClick={() => {
                 setIsClicked("About");
               }}
             >
               About
-            </Col>
-          </Link>
-          <Link to="/projects" className="text-decoration-none text-light">
-            <Col
-              xs
-              lg="3"
-              className={
-                isClicked === "Projects"
-                  ? "navigation-text"
-                  : "navigation-text not-clicked"
-              }
+            </Link>
+            <Link
+              to="/projects"
+              className={`text-decoration-none text-light ${
+                isClicked === "Projects" ? "nav-link-active" : ""
+              }`}
               onClick={() => {
                 setIsClicked("Projects");
               }}
             >
               Projects
-            </Col>
-          </Link>
-          <Link to="/services" className="text-decoration-none text-light">
-            <Col
-              xs
-              lg="3"
-              className={
-                isClicked === "Services"
-                  ? "navigation-text"
-                  : "navigation-text not-clicked"
-              }
+            </Link>
+            <Link
+              to="/services"
+              className={`text-decoration-none text-light ${
+                isClicked === "Services" ? "nav-link-active" : ""
+              }`}
               onClick={() => {
                 setIsClicked("Services");
               }}
             >
               Services
-            </Col>
-          </Link>
-        </NavLink>
-      </Row>
-    </Container>
+            </Link>
+          </NavLink>
+        </Row>
+      </Container>
+    </div>
   );
-};
+}
 
-export default Navbar;
+export default YourNavbar;
