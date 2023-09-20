@@ -20,8 +20,10 @@ function YourNavbar() {
           <li className="">
             <Link
               to="/"
-              onClick={() => setIsClicked("Home")}
-              className={isClicked ? "nav-link-active" : "not-clicked"}
+              onClick={() => setIsClicked("Home", console.log("Home "))}
+              className={
+                isClicked === "Home" ? "nav-link-active" : "not-clicked"
+              }
             >
               Home
             </Link>
@@ -30,20 +32,34 @@ function YourNavbar() {
             <Link
               to="/about"
               onClick={() => setIsClicked("About")}
-              className={isClicked ? "nav-link-active" : "not-clicked"}
+              className={
+                isClicked === "About" ? "nav-link-active" : "not-clicked"
+              }
             >
               about
             </Link>
           </li>
           <li>
-            <a href="/" className="nav-link-active">
+            <Link
+              to="/projects"
+              onClick={() => setIsClicked("projects")}
+              className={
+                isClicked === "Projects" ? "nav-link-active" : "not-clicked"
+              }
+            >
               Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/" className="nav-link-active">
-              Services{" "}
-            </a>
+            <Link
+              to="/services"
+              onClick={() => setIsClicked("services")}
+              className={
+                isClicked === "services" ? "nav-link-active" : "not-clicked"
+              }
+            >
+              Services
+            </Link>
           </li>
         </ul>
       </nav>

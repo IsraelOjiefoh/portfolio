@@ -1,5 +1,5 @@
 .not-clicked {
-    color: gray;
+    color: rgb(199, 197, 197);
     cursor: pointer;
     text-decoration: none;
 }
@@ -29,13 +29,13 @@
     transform-origin: left;
 }
 
-/* * {
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-} */
+}
 
 
 
@@ -110,7 +110,7 @@ a:hover {
 
     ul {
         position: fixed;
-        width: 100%;
+        width: 45%;
         height: 100vh;
         background: rgb(90, 2, 90);
         top: 80px;
