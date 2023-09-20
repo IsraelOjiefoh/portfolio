@@ -20,7 +20,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="projects">
+    <div className="projects ">
       {project.map((item) => (
         <div className="item" key={item.id}>
           <img src={item.imgUrl} alt="image" className="w-75" />

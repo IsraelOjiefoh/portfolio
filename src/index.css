@@ -41,7 +41,7 @@
 }
 
 /* Add this CSS to your stylesheet */
- .tech-card {
+.tech-card {
   border: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   font-size: 50px;
@@ -55,4 +55,33 @@
 
 .tech-icons-row .tech-icons:hover {
   transform: scale(1.1);
-} 
+}
+
+/* Define CSS classes for the "page" transition */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.page-exit {
+  opacity: 1;
+}
+
+.page-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Additional styles for the "about-section" container and its children */
+.about-section {
+  /* Add your styles here */
+}
+
+/* Additional styles for other elements like "about-img" and "purple" */

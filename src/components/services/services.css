@@ -29,3 +29,16 @@
   li {
     margin-bottom: 10px;
   }
+/* YourComponent.css */
+.your-component {
+  opacity: 0;
+  transform: translateY(50px);
+  /* Start position off-screen */
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.your-component.slide-in {
+  opacity: 1;
+  transform: translateY(0);
+  /* End position, sliding in from the top */
+}
