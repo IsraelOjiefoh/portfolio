@@ -1,7 +1,12 @@
 import portfolioImg from "./portfolio.jpg";
 import MemeImg from "./meme.jpg";
+import { useInView } from "react-intersection-observer";
 import "./projects.css";
 const Projects = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: false,
+    threshold: 0.2,
+  });
   const project = [
     {
       id: 1,
@@ -20,20 +25,22 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="projects ">
-      {project.map((item) => (
-        <div className="item" key={item.id}>
-          <img src={item.imgUrl} alt="image" className="w-75" />
-          <div className=" pb-3 fs-4">{item.title}</div>
+    <div className={`your-component ${inView ? "zoom-in" : ""}`} ref={ref}>
+      <div className="projects ">
+        {project.map((item) => (
+          <div className="item" key={item.id}>
+            <img src={item.imgUrl} alt="image" className="w-75" />
+            <div className=" pb-3 fs-4">{item.title}</div>
 
-          <a href={item.gitHubRepo} target="_blank ">
-            <button className="btn btn-light mb-4 me-4">GitHub</button>
-            <a href={item.liveDemo} target="_blank ">
-              <button className="btn btn-success mb-4">Live Demo</button>
+            <a href={item.gitHubRepo} target="_blank ">
+              <button className="btn btn-light mb-4 me-4">GitHub</button>
+              <a href={item.liveDemo} target="_blank ">
+                <button className="btn btn-success mb-4">Live Demo</button>
+              </a>
             </a>
-          </a>
-        </div>
-      ))}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
