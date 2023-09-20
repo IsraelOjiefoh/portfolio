@@ -16,7 +16,7 @@ const Projects = () => {
       imgUrl: MemeImg,
       title: "Meme Viewer",
       liveDemo: "https://meme2.netlify.app/",
-      gitHubRepo: "http://www.github.com/IsraelOjiefoh/meme",
+      gitHubRepo: "https://github.com/IsraelOjiefoh/memes",
     },
   ];
   return (
