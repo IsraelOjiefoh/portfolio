@@ -11,7 +11,7 @@ import { SiNextdotjs } from "react-icons/si";
 
 function Techstack() {
   return (
-    <Card className="tech-card mb-5">
+    <Card className="tech-card pb-5">
       <Card.Body>
         <CardHeader>My Skills</CardHeader>
         <Row

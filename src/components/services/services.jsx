@@ -13,7 +13,7 @@ const Services = () => {
         className={`your-component ${inView ? "slide-in" : ""}`}
         ref={ref} // Attach the ref to the element you want to track
       >
-        <div className="my-5">
+        <div className="skills">
           <h2>What I Offer</h2>
           <div className="frontend">
             <div className="card-head">FrontEnd Development</div>

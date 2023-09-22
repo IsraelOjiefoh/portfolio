@@ -24,7 +24,7 @@ const About = () => {
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px", paddingTop:"90px" }}>
               Know Who <strong className="purple">I AM</strong>
             </h1>
             <Aboutcard />

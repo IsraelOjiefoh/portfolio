@@ -5,6 +5,7 @@ import Services from "./components/services/services";
 import NotFound from "./components/not_found/not_found";
 import Layout from "./components/About/layout/layout";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
             />
             <Route path="*" element={<NotFound />} /> {/* Use element */}
           </Routes>
+        <Footer/>
         </Router>
       </div>
     </>

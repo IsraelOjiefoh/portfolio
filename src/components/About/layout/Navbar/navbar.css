@@ -49,7 +49,7 @@ label.logo {
     color: white;
     font-size: 35px;
     line-height: 80px;
-    padding: 0 100px;
+    padding: 0 300px;
     font-weight: bold;
 
 }
@@ -108,7 +108,7 @@ a:hover {
         display: block;
     }
 
-    ul {
+     .ul {
         position: fixed;
         width: 45%;
         height: 100vh;
@@ -118,7 +118,7 @@ a:hover {
         text-align: center;
         transition: all .5s;
 
-    }
+    } 
 
     nav ul li {
         display: block;

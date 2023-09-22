@@ -29,8 +29,8 @@ const YourNavbar = () => {
           <label htmlFor="check" className="checkbtn">
             <i className="fas fa-bars"></i>
           </label>
-          <label className="logo">Israel Ojiefoh</label>
-          <ul>
+          <label className="logo">IO</label>
+          <ul className="ul">
             <li className="">
               <Link
                 to="/"
