@@ -1,5 +1,6 @@
 import portfolioImg from "./portfolio.jpg";
 import MemeImg from "./meme.jpg";
+import vee_mart from "./vee-mart.jpg"
 import { useInView } from "react-intersection-observer";
 import "./projects.css";
 const Projects = () => {
@@ -9,7 +10,6 @@ const Projects = () => {
   });
   const projects = [
     {
-      id: 1,
       imgUrl: portfolioImg,
       title: "Personal Portfolio Website",
 
@@ -17,19 +17,24 @@ const Projects = () => {
       gitHubRepo: "http://www.github.com/IsraelOjiefoh/portfolio",
     },
     {
-      id: 2,
       imgUrl: MemeImg,
       title: "Meme Viewer",
       liveDemo: "https://meme2.netlify.app/",
       gitHubRepo: "https://github.com/IsraelOjiefoh/memes",
     },
+    {
+      imgUrl: vee_mart,
+      title: "Vee-Mart",
+      liveDemo: "https:vee-mart.netlify.app/",
+      gitHubRepo:"https://github.com/IsraelOjiefoh/vee"
+    }
   ];
   const ReversedProjects = projects.reverse()
   return (
     <div className={`your-component ${inView ? "zoom-in" : ""}`} ref={ref}>
       <div className="projects ">
-        {ReversedProjects.map((project) => (
-          <div className="project" key={project.id}>
+        {ReversedProjects.map((project, index) => (
+          <div className="project" key={index}>
             <img src={project.imgUrl} alt="image" className="w-75 pt-5" />
             <div className=" pb-3 fs-4">{project.title}</div>
 
