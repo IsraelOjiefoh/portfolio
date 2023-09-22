@@ -25,8 +25,8 @@ const Projects = () => {
     {
       imgUrl: vee_mart,
       title: "Vee-Mart",
-      liveDemo: "https:vee-mart.netlify.app/",
-      gitHubRepo:"https://github.com/IsraelOjiefoh/vee"
+      liveDemo: "https://vee-mart.netlify.app/",
+      gitHubRepo:"https://github.com/IsraelOjiefoh/vee-mart"
     }
   ];
   const ReversedProjects = projects.reverse()
